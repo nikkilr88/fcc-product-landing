@@ -1,0 +1,389 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: "Encode Sans Semi Condensed";
+}
+
+h1 {
+	font-size: 2em;
+}
+
+.translateX {
+	transform: translateX(-200px);
+}
+
+/*MENU*/
+#menu {
+	position: fixed;
+	width: 200px;
+	height: 100vh;
+	right: 0;
+	z-index: -999;
+	background: #222;
+	box-shadow: inset 6px 1px 9px -6px #111;
+	color: #999;
+	display: none;
+}
+
+#menu ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#menu ul li {
+	text-align: left;
+	padding: 15px 0 15px 10px;
+	border-bottom: 1px solid rgba(255,255,255,0.04);
+}
+
+/*NAV*/
+nav {
+	position: fixed;
+	z-index: 999;
+	color: whitesmoke;
+	width: 100%;
+	margin: 0 auto;
+	top: 0;
+	right: 0;
+	left: 0;
+	transition: color 0.3s, background 0.3s,transform 0.1s ease-in-out;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+nav .container {
+	width: 95%;
+	margin: 0 auto;
+	overflow: auto;
+}
+
+nav .logo {
+	float: left;
+	font: 18px "Pacifico";
+	padding: 5px;
+}
+
+nav .menuBars {
+	float: right;
+	font-size: 18px;
+	height: 100%;
+	position: relative;
+	top: 8px;
+}
+
+nav ul {
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav ul li {
+	display: inline-block;
+	margin: 0 10px;
+	padding: 5px;
+}
+
+nav a {
+	text-decoration: none;
+	color: inherit;
+}
+
+/*HEADER*/
+header {
+	background: url("./images/twitter-bg.jpg");
+	background-size: cover;
+	background-position: bottom center;
+	width: 100%;
+	height: 440px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+header .wrapper {
+	width: 850px;
+	margin: 0 auto;
+	padding-top: 45px;
+}
+
+header .text {
+	margin: 50px 0;
+	max-width: 400px;
+	width: 95%;
+	position: absolute;
+	color: whitesmoke;
+}
+
+header h2 {
+	margin: 15px 0;
+	font-size: 40px;
+	font-weight: 100;
+}
+
+header h3 {
+	margin: 15px 0;
+	font-weight: 100;
+}
+
+header img {
+	float: right;
+	height: 400px;
+	margin: 50px;
+}
+
+header .buttons {
+	margin-top: 50px;
+}
+
+header .arrow {
+	border-top: 15px solid #253147;
+	border-right: 15px solid transparent;
+	border-left: 15px solid transparent;
+	border-bottom: 15px solid transparent;
+	width: 0;
+	position: absolute;
+	bottom: -30px;
+	right: 0;
+	left: 0;
+	margin: 0 auto;
+}
+
+.btn-border {
+	border: none;
+	padding: 10px;
+	border: 1px solid #33ccff;
+	background: none;
+	border-radius: 10px;
+	color: whitesmoke;
+	margin-right: 5px;
+}
+
+.btn-border:hover {
+	cursor: pointer;
+}
+
+/*MAIN*/
+
+main {
+	margin: 150px 0;
+}
+
+main h1 {
+	text-align: center;
+	color: #333;
+	margin: 100px 0;
+	font-weight: 400;
+}
+
+.features {
+	overflow: auto;
+}
+
+.features .col {
+	float: left;
+	margin: 1.66%;
+}
+
+.features .col:nth-child(1),
+main .col:nth-child(3) {
+	width: 35%;
+}
+
+.features .col:nth-child(2) {
+	width: 20%;
+}
+
+.features .col-left {
+	text-align: right;
+}
+
+.features img {
+	height: 350px;
+	margin: 0 auto;
+	display: block;
+}
+
+.features .col .feature {
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.features .col.col-left p,
+.features .col.col-left h3 {
+	padding-right: 30px;
+}
+
+.features .col.col-right p,
+.features .col.col-right h3 {
+	padding-left: 30px;
+}
+
+.features p, .features h3 {
+	display: inline-block;
+	width: 250px;
+}
+
+.features .feature .fa {
+	width: 35px;
+	height: 35px;
+	padding: 10px;
+	text-align: center;
+	line-height: 35px;
+	color: #2B3558;
+	border: 1px solid #2B3558;
+	border-radius: 50%;
+	transition: all 0.3s;
+}
+
+.features .col-left .feature .fa {
+	position: absolute;
+	right: -50px;
+	font-size: 30px;
+}
+
+.features .col-right .feature .fa {
+	position: absolute;
+	left: -50px;
+	font-size: 30px;
+}
+
+.features .col-right .feature:hover .fa, .features .col-left .feature:hover .fa  {
+	background: #2B3558;
+	color: whitesmoke;
+}
+
+/* VIDEO */
+.video iframe {
+	margin: 0 auto;
+	display: block;
+	max-width: 560px;
+	width: 95%;
+}
+
+/*Signup Form*/
+.signUp {
+	text-align: center;
+	background: linear-gradient(rgba(43, 53, 88, 0.6), rgba(43, 53, 88, 0.6)), url("./images/contact.jpg");
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+	margin-top: 70px;
+}
+
+.signUp input,
+.signUp button {
+	border: none;
+	outline: none;
+	padding: 15px 10px;
+}
+
+.signUp input {
+	background: whitesmoke;
+	color: #222;
+	border-radius: 10px 0 0 10px;
+	max-width: 400px;
+	width: 70%;
+}
+
+.signUp #submit {
+	background: #2B3558;
+	color: whitesmoke;
+	font-weight: bold;
+	border-radius: 0 10px 10px 0;
+	width: auto;
+}
+
+.signUp h1 {
+	color: whitesmoke;
+	font-weight: 400;
+	margin: 0;
+}
+
+.signUp p {
+	margin: 20px auto 50px auto;
+	max-width: 400px;
+	width: 95%;
+	color: whitesmoke;
+}
+
+@media (max-width: 1043px) {
+	main h1 {
+		text-align: center;
+		color: #333;
+		margin: 70px 0;
+		font-weight: 400;
+	}
+	.features .col {
+		float: none;
+		margin: 0 auto;
+		padding: 0;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.features .col img {
+		display: none;
+	}
+	.features .col:nth-child(1),
+	main .col:nth-child(3), .features .col:nth-child(2) {
+		width: 100%;
+	}
+
+	.features .col-left .feature .fa,
+	.features .col-right .feature .fa {
+		position: relative;
+		float: none;
+		right: 0;
+		left: 0;
+		float: left;
+	}
+	
+	.features .col .feature {
+		border-bottom: 1px solid #ccc;
+		margin: 0 auto;
+		max-width: 400px;
+		width: 95%;
+		padding: 25px 0;
+		text-align: center;
+	}
+
+	.features .col.col-left p,
+	.features .col.col-left h3, .features .col.col-right p,
+	.features .col.col-right h3{
+		padding: 0;
+		margin: 0;
+		text-align: left;
+	}
+
+	.features .col.col-right p,
+	.features .col.col-right h3 {
+		padding-left: 0;
+		margin: 0;
+	}
+
+}
+
+
+@media (max-width: 990px) {
+	header {
+		padding: 25px 0;
+		height: auto;
+	}
+	header .wrapper {
+		width: 100%;
+		padding-top: 50px;
+	}
+	header .text {
+		text-align: center;
+		margin: 25px auto;
+		position: relative;
+
+	}
+	header img {
+		height: 300px;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+}
