@@ -40,10 +40,12 @@ h1 {
 /*NAV*/
 nav {
 	position: fixed;
+	box-sizing: border-box;
 	z-index: 999;
 	color: whitesmoke;
 	width: 100%;
 	margin: 0 auto;
+	padding: 0 50px;
 	top: 0;
 	right: 0;
 	left: 0;
@@ -307,6 +309,36 @@ main .col:nth-child(3) {
 	color: whitesmoke;
 }
 
+@media (max-width: 635px) {
+	nav {
+		flex-direction: column;
+	}
+	header .wrapper {
+		padding-top: 95px;
+	}
+}
+
+@media (max-width: 990px) {
+	header {
+		padding: 25px 0;
+		height: auto;
+	}
+	header .wrapper {
+		width: 100%;
+	}
+	header .text {
+		text-align: center;
+		margin: 25px auto;
+		position: relative;
+	}
+	header img {
+		height: 300px;
+		margin: 0 auto;
+		display: block;
+		float: none;
+	}
+}
+
 @media (max-width: 1043px) {
 	main h1 {
 		text-align: center;
@@ -365,25 +397,4 @@ main .col:nth-child(3) {
 }
 
 
-@media (max-width: 990px) {
-	header {
-		padding: 25px 0;
-		height: auto;
-	}
-	header .wrapper {
-		width: 100%;
-		padding-top: 50px;
-	}
-	header .text {
-		text-align: center;
-		margin: 25px auto;
-		position: relative;
 
-	}
-	header img {
-		height: 300px;
-		margin: 0 auto;
-		display: block;
-		float: none;
-	}
-}
