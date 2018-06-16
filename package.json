@@ -1,0 +1,26 @@
+{
+  "name": "twit-landing",
+  "version": "1.0.0",
+  "description": "Product landing page for FCC",
+  "main": "script.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nikkilr88/fcc-product-landing.git"
+  },
+  "author": "Nicole Sattler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nikkilr88/fcc-product-landing/issues"
+  },
+  "homepage": "https://github.com/nikkilr88/fcc-product-landing#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0"
+  }
+}
