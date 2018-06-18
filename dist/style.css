@@ -59,12 +59,25 @@ button:hover {
 
 /*NAV*/
 
+.transparent {
+	background: none;
+	color: whitesmoke;
+	border-bottom: none;
+	opacity: 0.7;
+}
+
+.light {
+	background: white;
+	color: #777;
+	border-bottom: 1px solid #eee;
+	opacity: 1;
+}
+
 nav {
 	position: fixed;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
 	z-index: 999;
-	color: whitesmoke;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0 50px;
@@ -93,12 +106,6 @@ nav .container {
 	overflow: auto;
 }
 
-nav .logo {
-	float: left;
-	font: 18px "Pacifico";
-	padding: 5px;
-}
-
 nav .menuBars {
 	float: right;
 	font-size: 18px;
@@ -113,10 +120,15 @@ nav ul {
 	float: right;
 }
 
+.logo {
+	font-family: 'Pacifico';
+}
+
+.logo,
 nav ul li {
 	display: inline-block;
 	margin: 0 10px;
-	padding: 5px;
+	padding: 10px;
 }
 
 nav a {
@@ -449,6 +461,7 @@ form {
 		-ms-flex: 1 1 auto;
 		flex: 1 1 auto;
 		max-width: 500px;
-		width: 95%;
+		width: 90%;
+		padding-bottom: 50px;
 	}
 }
