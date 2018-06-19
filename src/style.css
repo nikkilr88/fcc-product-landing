@@ -153,7 +153,7 @@ header .text {
 
 header h1 {
 	margin: 15px 0;
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: 100;
 	font-family: 'Quicksand';
 }
@@ -161,6 +161,7 @@ header h1 {
 header p {
 	margin: 15px 0;
 	font-weight: 300;
+	font-size: 1em;
 }
 
 header img {
@@ -266,18 +267,24 @@ main {
 
 .video {
 	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 0 75px;
 }
 
 .video > * {
 	flex: 0 0 45%;
+	margin: 1.66%;
 }
 
 .video iframe {
-	margin: 0 auto;
 	display: block;
 	max-width: 560px;
 	width: 95%;
+}
+
+.video aside {
+	max-width: 560px;
 }
 
 /*Signup Form*/
@@ -325,6 +332,7 @@ form {
 @media (max-width: 635px) {
 	nav {
 		flex-direction: column;
+		padding: 0;
 	}
 	header .wrapper {
 		padding-top: 95px;
@@ -367,9 +375,6 @@ form {
 		flex: 0 0 auto;
 	}
 	.features .col img {
-		-webkit-box-ordinal-group: 2;
-		-webkit-order: 1;
-		-ms-flex-order: 1;
 		order: 1;
 	}
 	.features .fa {
@@ -408,5 +413,29 @@ form {
 		max-width: 500px;
 		width: 90%;
 		padding-bottom: 50px;
+	}
+}
+
+@media 
+only screen and ( min-width: 2000px ) {
+	body {
+		font-size: 20px;
+	}
+	main {
+		width: 70%;
+		margin: 150px auto;
+	}
+	header .wrapper {
+		width: 45%;
+	}
+	header .text {
+		max-width: 600px;
+	}
+	.signUp p {
+		max-width: 600px;
+	}
+	.features p,
+	.features h3 {
+		width: 350px;
 	}
 }

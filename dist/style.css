@@ -165,7 +165,7 @@ header .text {
 
 header h1 {
 	margin: 15px 0;
-	font-size: 40px;
+	font-size: 2.5em;
 	font-weight: 100;
 	font-family: 'Quicksand';
 }
@@ -173,6 +173,7 @@ header h1 {
 header p {
 	margin: 15px 0;
 	font-weight: 300;
+	font-size: 1em;
 }
 
 header img {
@@ -293,6 +294,12 @@ main {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
 	padding: 0 75px;
 }
 
@@ -300,13 +307,17 @@ main {
 	-webkit-box-flex: 0;
 	-ms-flex: 0 0 45%;
 	flex: 0 0 45%;
+	margin: 1.66%;
 }
 
 .video iframe {
-	margin: 0 auto;
 	display: block;
 	max-width: 560px;
 	width: 95%;
+}
+
+.video aside {
+	max-width: 560px;
 }
 
 /*Signup Form*/
@@ -364,6 +375,7 @@ form {
 		-webkit-box-direction: normal;
 		-ms-flex-direction: column;
 		flex-direction: column;
+		padding: 0;
 	}
 	header .wrapper {
 		padding-top: 95px;
@@ -463,5 +475,29 @@ form {
 		max-width: 500px;
 		width: 90%;
 		padding-bottom: 50px;
+	}
+}
+
+@media 
+only screen and ( min-width: 2000px ) {
+	body {
+		font-size: 20px;
+	}
+	main {
+		width: 70%;
+		margin: 150px auto;
+	}
+	header .wrapper {
+		width: 45%;
+	}
+	header .text {
+		max-width: 600px;
+	}
+	.signUp p {
+		max-width: 600px;
+	}
+	.features p,
+	.features h3 {
+		width: 350px;
 	}
 }
